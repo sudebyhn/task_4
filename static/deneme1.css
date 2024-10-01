@@ -1,0 +1,452 @@
+/* Genel Sayfa Ayarları */
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin: 0; /* Varsayılan marginleri kaldır */
+    padding: 0; /* Varsayılan paddingleri kaldır (varsa) */
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration:none;
+}
+body {
+    margin: 0; /* Varsayılan marginleri kaldır */
+    padding: 0; /* Varsayılan paddingleri kaldır (varsa) */
+}
+
+
+
+header {
+    background-color: rgb(0, 0, 128); /* Koyu mavi arka plan */
+    box-sizing: border-box; /* Kutunun boyutlandırılmasında padding ve border'ı dikkate al */
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    display: flex; /* Flex kutusu oluştur */
+    align-items: center; /* Yatay ortalamak için */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Yazı fontları */
+    font-size: 16px; /* Varsayılan yazı boyutu */
+    font-weight: 400; /* Yazı kalınlığı */
+    height: auto; /* Yükseklik otomatik ayarlanır, responsive için uygun */
+    line-height: 24px; /* Satır yüksekliği */
+    padding: 0; /* Üst ve alt padding sıfır */
+    text-align: left; /* Yazı hizalaması */
+    width: 100%; /* Genişlik tüm ekran */
+    z-index: 200; /* Diğer öğelerin üstünde görünür */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Mobilde dokunma vurgusu yok */
+}
+
+
+
+
+  
+  
+.container {
+    max-width:100%;
+    width:96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Elemanların birden fazla satıra geçmesine izin verir */
+
+}
+.item {
+    flex: 1; /* Her bir eleman eşit alan kaplar */
+    margin: 10px; /* Elemanlar arasında boşluk bırakır */
+}
+
+
+
+
+@media screen and  (max-width: 780px) {
+    .container {
+        width:100%
+    }
+    .button-container .image-container .header-content{
+        width:100%
+
+    }
+    .header-drawer {
+        width: 100%; /* Sidebar genişliği tam ekran */
+    }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+
+}
+.navbar-brand{
+    margin-left: 25px !important; /* Logo sola kayar */
+
+}
+
+  
+  .MuiToolbar-root {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+    justify-content: flex-start; /* Sola hizalı kalır */
+    width: 50%; /* Kapsayıcı genişliği sayfanın yarısı kadar */
+    margin-left: 35%; /* Kapsayıcıyı sayfanın ortasına taşı */
+    transform: translateX(-50%); /* Tam doğru konum için */
+
+
+  }
+  /* Navigasyon linkleri */
+.MuiStack-root {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-start; /* Sola hizalı kalır */
+    width: 40%; /* Kapsayıcı genişliği sayfanın yarısı kadar */
+    margin-left:45%; /* Kapsayıcıyı sayfanın ortasına taşı */
+    transform: translateX(-50%); /* Tam doğru konum için */
+
+
+  }
+
+  .MuiButtonBase-root  {  /* butonlar */
+    font-size: 20px;
+    color:#ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0px ;
+    line-height: 4.5; /* Satır yüksekliğini sabitle */
+
+
+   
+  }
+  .MuiBox-root{  /* request  css*/
+    font-size: 20px;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit; /* Ebeveyn elemandan renk almasını sağlar
+    request ve diğer buton renk karmaşasını önemek için */
+
+  }
+  .MuiStack-root a {
+    font-size: 1.25rem; /* Büyük yazı boyutu */
+
+    font-weight: 600; /* Kalın yazı */
+    margin-right: 20px;
+    text-decoration: none; /* Alt çizgi yok */
+}
+
+.MuiButton-containedPrimary {
+    padding: 12px 32px; /* Üst-alt ve sağ-sol padding */
+
+        box-sizing: border-box;
+        color: rgb(0, 0, 128) !important; /* Koyu mavi yazı rengi */
+        cursor: pointer;
+        display: flex;
+        font-family: 'Lato', sans-serif; /* Lato yazı tipi */
+        font-size: 20px;
+        font-weight: 600;
+        height: 49.6px;
+        justify-content: center;
+        letter-spacing: normal;
+        line-height: normal;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        text-size-adjust: 100%;
+        text-transform: none;
+        text-wrap: nowrap;
+        user-select: none;
+        white-space-collapse: collapse;
+        width: 211.375px; /* Genişlik */
+        background-color: rgb(224, 255, 255); /* Açık mavi arka plan */
+        border: 0.8px solid rgb(224, 255, 255); /* Kenar rengi ve kalınlığı */
+        border-radius: 4px; /* Kenar yuvarlama */
+        transition: background-color 0.25s, border-color 0.25s, color 0.25s; /* Geçiş efektleri */
+    }
+    .reviews-button {
+        align-items: center;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        display: flex; /* flex olarak ayarlandı */
+        font-family: 'Lato', sans-serif; /* Lato fontu eklendi */
+        font-size: 20px;
+        height: 46px;
+        letter-spacing: normal;
+        line-height: 30px;
+        margin-bottom: 0;
+        margin-left: 32px;
+        margin-right: 0;
+        margin-top: 0;
+        min-width: 0;
+        outline-color: rgb(255, 255, 255);
+        outline-style: none;
+        outline-width: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-bottom: 8px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 8px;
+        position: relative;
+        text-align: left;
+        text-decoration: none; /* Alt çizgi yok */
+        text-transform: none;
+        transition-duration: 0.25s;
+        transition-property: background-color, box-shadow, border-color, color;
+        user-select: none;
+        vertical-align: middle;
+        white-space: nowrap; /* Tek satırda kalacak */
+        width: 74.8px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    .button-container { /* tüm butonların bulunduğu ana kapsayıcıdır*/
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 525.05px;
+        box-sizing: border-box;
+    }
+    
+    .button-container a { /*her bir butonun stilini tanımlar. Flexbox özellikleri kullanılarak butonlar arasında esneklik sağlanır.*/
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 16px;
+        font-weight: 400;
+        height: 49.6px;
+        line-height: 24px;
+        text-align: left;
+        text-size-adjust: 100%;
+        unicode-bidi: isolate;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    .reviews-button {
+        align-items: center;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        display: flex; /* Flex kullanarak içeriği ortaladım */
+        font-family: 'Lato', sans-serif; /* Lato fontunu ekledim */
+        font-size: 20px;
+        font-weight: 600;
+        height: 46px;
+        letter-spacing: normal;
+        line-height: 30px;
+        margin-bottom: 0;
+        margin-left: 32px;
+        margin-right: 0;
+        margin-top: 0;
+        min-width: 0;
+        outline: none; /* Dış çerçeveyi kaldırdım */
+        overflow: hidden; /* Taşmaları gizledim */
+        padding: 8px 0; /* Üst ve alt için 8px, yanlar için 0 */
+        text-align: left;
+        text-decoration: none; /* Alt çizgiyi kaldırdım */
+        text-transform: none;
+        transition-duration: 0.25s; /* Geçiş süresi */
+        transition-property: background-color, box-shadow, border-color, color;
+        user-select: none;
+        vertical-align: middle;
+        white-space: nowrap; /* Tek satırda kalacak */
+        width: 74.8px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Mobilde dokunma vurgusu yok */
+    }
+    
+    /* Üst Katman - Buton Kapsayıcı-Butonun genel düzenini */
+.product-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 525.05px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    height: 49.6px;
+    line-height: 24px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-align: center;
+    -webkit-box-flex: 1;
+    -webkit-box-pack: end;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* Alt Katman - Buton -Butonun stilini*/
+.product-button {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 600;
+    height: 30px;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-transform: none;
+    text-wrap: nowrap;
+    user-select: none;
+    white-space-collapse: collapse;
+    width: 72.1px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+  .MuiIconButton-root svg {
+    fill: #ffffff; /* Beyaz ikon */
+  }
+
+  .custom-icon {
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+    display: inline;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 27.4286px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 41.1429px;
+    text-align: center;
+    text-size-adjust: 100%;
+    user-select: none;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.custom-icon-button {
+    background-color: rgba(0, 0, 0, 0); /* Şeffaf arka plan */
+    box-sizing: border-box;
+    color: rgb(0, 123, 255); /* Mavi yazı rengi */
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    font-weight: 400;
+    height: 96.8px;
+    line-height: 30px;
+    margin-right: 32px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+    text-decoration-color: rgb(0, 123, 255); /* Yazı dekorasyonu için mavi */
+    text-decoration-line: none; /* Alt çizgi yok */
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    text-wrap: nowrap;
+    white-space-collapse: collapse; /* Boşlukları daraltır */
+    width: 302px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Mobilde dokunma vurgusu yok */
+  }
+  .mobile-menu {
+    display: none; /* Başlangıçta gizli */
+    flex-direction: column; /* Dikey sıralama */
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: flex; /* Ekran boyutu 768px ve altındaysa görünür */
+    }
+}
+
+
+
+
+
+
+
+/* Demo Talep Butonu Ayarları */
+
+/* Drawer Stili */
+#drawer {
+    position: fixed; /* Sayfanın üstünde sabit kalmasını sağlar */
+    top: 0;
+    right: 0;
+    width: 100%; /* Tüm genişlik */
+    height: 100%; /* Tüm yükseklik */
+    background-color: rgb(0, 0, 128); /* Koyu mavi arka plan */
+    box-shadow: rgba(33, 33, 33, 0.08) 0px 8px 32px 0px, rgba(33, 33, 33, 0.04) 0px 2px 4px 0px; /* Gölge */
+    color: rgb(255, 255, 255); /* Beyaz yazı rengi */
+    display: flex; /* Flexbox kullanımı */
+    flex-direction: column; /* Dikey yönlendirme */
+    overflow-y: auto; /* Dikey kaydırma */
+    z-index: 1200; /* Üstte görünmesi için yüksek z-index */
+    padding: -2px 0; /* Üst ve alt boşluğu azalt */
+
+}
+.custom-stack {
+    display: flex;
+    flex-direction: column; /* Dikey hizalama */
+    align-items: flex-start; /* Sol tarafa hizalama */
+    padding: 8px ; /* Üst ve alt boşluğu azalt */
+}
+/* Butonlar burada */
+.drawer-links {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Dikey yönde hizalanmasını sağlar */
+    padding: 8px 0; /* İç boşluğu azalt, yanlarda 0 bırak */
+    margin-top: -10px; /* Logonun altında boşluğu azalt */
+}
+
+.drawer-links a {
+    margin-bottom: -10px; /* Butonlar arasındaki boşluk */
+}
+
+
+#drawer {
+    height: calc(100% - 20px); /* 20px boşluk bırak */
+}
+/* Kapatma Butonu Dış Stil */
+.close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none; /* Arka planı kaldır */
+    border: none; /* Kenarlıkları kaldır */
+    box-shadow: none; /* Gölgeyi kaldır */
+    cursor: pointer; /* İmleç şekli */
+    padding: 0; /* İç boşluğu kaldır */
+}
+
+.close-button svg {
+    fill: rgb(255, 255, 255); /* Çarpı işaretinin rengini ayarlayın */
+    width: 1.3em; /* Genişlik ayarı */
+    height: 1.3em; /* Yükseklik ayarı */
+}
+
+/*EKLENEN SONRASI İİN*/
+.section{
+    padding:100px 0;
+    background-color:#f4f4f4;
+}
+
+.section_title{
+margin-bottom: 30px; /*başlığın altındaki boşluk*/
+}
+.sectin_title h2{
+
+}
+
+
+

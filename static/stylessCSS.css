@@ -1,0 +1,1333 @@
+/* Genel stiller */
+html{
+    scroll-behavior: smooth;
+    height: 100%; /* Tam yükseklik */
+    width: 100%; /* Resmi tam genişlik yap */
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden; /* Yatay kaydırmayı engelle */
+
+}
+*{
+    width: 100%; /* Resmi tam genişlik yap */
+
+    box-sizing: border-box; /* Tüm elementlerde box-sizing'i border-box olarak ayarla */
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+   
+    margin-left:  auto;
+    margin-right:   auto;
+
+}
+body {
+    width: 100%; /* Resmi tam genişlik yap */
+
+   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Yazı tipi */
+    text-decoration: none; /* Alt çizgi kaldır */
+   
+    margin:0; /* Varsayılan margin değerlerini sıfırla */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+    background-color: #f4f4f4; /* Örnek arka plan rengi */
+   
+}
+img{
+    width: 100%;
+}
+/* -----HEADER-----*/
+header {
+    
+    width: 100%; /* Resmi tam genişlik yap */
+
+    background-color: rgb(0, 0, 128); /* Koyu mavi arka plan */
+    border-bottom: 1px solid rgb(238,238,238,0.801);
+/*position:fixed; /*sabit kalır*/
+
+   /*  margin: 0; /* Varsayılan margin değerlerini sıfırla */
+    padding-top: 12px;
+    padding-bottom: 1px;
+    height: 105px;
+}
+/*header ,image -sol taraf*/
+.navbar {
+    width: 100%; /* Navbar genişliği %100 */
+    display: flex; /* Flexbox kullan */
+    justify-content: space-between; /* Sağ ve sola dağıt */
+    align-items: center; /* Dikeyde ortala */
+    margin: 0; /* Varsayılan margin değerlerini sıfırla */
+
+    z-index:5px;
+    padding-left: 10vw; /* Sol padding */
+
+
+}
+
+/* Sol Taraf için (İmg) */
+.navbar .logo { /* Logo veya img için bir sınıf ekle */
+    width: 50%; /* Genişliği %50 */
+    /* Diğer stil ayarları ekleyebilirsin */
+}
+/*sağ linkler*/
+.nav-links {
+    display: flex; /* Flexbox kullan */
+    justify-content: center; /* İçeriği yatayda ortala */
+    width: 100%; /* Genişliği %100 yap */
+    align-items: center; /* Dikeyde ortala */
+    margin: 0px;
+
+}
+
+/* Boşluk ayarlamak için */
+.nav-links li {
+    text-align: center; /* Buton içindeki metni ortalar */
+    margin: 0 17px; /* Yatayda boşluk ekle (örneğin 15px) */
+    flex: 0; /* Eşit genişlik istemiyoruz, bu yüzden 0 yap */
+    padding-top: 0px;
+}
+
+.nav-links li a {  
+
+    color: #fff;
+    /*padding: 2vw; /* Sol padding */
+   /* margin:10;*/
+    list-style: none; /* Noktaları kaldır */
+    font-size: 20px; /* Yazı boyutu */
+    font-weight: 600;
+    text-decoration: none; /* Alt çizgi kaldır */
+}
+.request-demo-bttn {
+    box-sizing: border-box;
+    color: rgb(0, 0, 128) !important; /* Koyu mavi yazı rengi */
+    cursor: pointer;
+    display: flex;
+    height: 49.6px;/*mkutu kalınlığı */
+    width: 211.375px; /* Genişlik */
+    background-color: rgb(224, 255, 255); /* Açık mavi arka plan */
+    border-radius: 5px;
+
+}
+.request-demo-bttn-text{
+    border-top-color: rgb(224, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center; /* Dikeyde ortala */
+    height: 100%; /* Buton yüksekliğini kullan */
+}
+
+
+
+
+
+
+
+/* Menü İkonu */
+.menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
+
+/* Section Stilleri */
+
+
+/* Tüm Section1 için ayar */
+.section1 {
+    background-color: #f4f4f4;
+    background-position-y: 50%;
+    background-size: cover;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    display: flex; /* Elemanları yatayda hizalamak için flex kullanıyoruz */
+   /* justify-content: space-between; /* İki kolon arasına boşluk bırak */
+   /* align-items: center; /* Elemanları üstten hizala */
+   /* width: 100vw; /* Genişliği tam ekran yap */
+   /* height: 100vh; /* Yükseklik tam ekran */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+  
+}
+.common-container-section1{
+ margin-left: 10vw;
+margin-right: 10vw;  
+    align-items :center;
+    box-sizing :border-box;
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size :16px;
+    font-weight: 400;
+    height: 566.75px;
+    justify-content: space-between;
+    line-height: 24px;
+    margin-top: -32px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-align: center;
+    -webkit-box-pack:justify;
+
+}
+/* Sol Kısım (Form ve Metinler) */
+.form-container {
+
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: block;
+    flex-basis: 50%;
+    flex-direction: row;
+    flex-grow: 0;
+    font-size: 16px;
+    font-weight: 400;
+    height: 566.75px;
+    line-height :24px;
+    margin-bottom: 0px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-top: 0px;
+    max-width: 100%;
+    padding-top :32px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-flex : 0;
+
+   /* width: 50%; /* Sol tarafın genişliği %50 */
+  /*  display: flex;
+  /*  flex-direction: column; /* Elemanları dikey hizala */
+  /*  justify-content: center; /* İçerikleri ortala */
+  /*  align-items: flex-start; /* İçerikleri sola hizala */
+   /* box-sizing: border-box;
+    margin-left:  13vw; /* Sol ve sağ için 10vw boşluk */
+   /* margin-top:4.5vw;
+   /* line-height: 70px;*/
+}
+
+
+
+/* Baş yazı */
+        .headline {
+            box-sizing: border-box;
+            color: rgb(47, 79, 79);
+            display: block;
+            font-family: Lato;
+            font-size: 48px;
+            font-weight: 600;
+            height: 232px;
+            letter-spacing: normal;
+            line-height: 72px;
+            margin-block-end: 8px;
+            margin-block-start: 0px;
+            margin-bottom: 8px;
+            margin-inline-end: 0px;
+            margin-inline-start: 0px;
+            margin-top: 0px;
+            padding-bottom: 16px;
+            padding-top: 0px;
+            text-align: left;
+            text-size-adjust: 100%;
+            text-wrap: wrap;
+            unicode-bidi: isolate;
+            white-space-collapse: preserve-breaks;
+            width: 555px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+
+
+           /* box-sizing: border-box; /* Kutunun boyutlandırılmasını ayarla */
+         /*   color: rgb(47, 79, 79); /* Yazı rengi */
+         /*   font-family: 'Lato', sans-serif; /* Yazı tipi */
+         /*   font-weight: 600; /* Yazı kalınlığı */
+        /*    font-size: 48px; /* Yazı boyutu */
+        /*  height: 376px; /* Yükseklik */
+
+        /*    letter-spacing: normal; /* Harfler arasındaki boşluk */
+        
+        /*    text-align: left; /* Metni sola hizala */
+        /*    text-size-adjust: 100%; /* Metin boyutunu ayarla */
+            
+        /*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Dokunma vurgusunu kaldır */
+        }
+
+    @media (max-width: 600px) {
+        .headline {
+            font-size: 36px; /* Daha küçük bir yazı boyutu */
+            width: 100%; /* Genişliği %100 yap */
+        }
+    }
+/* Paragraf Metin Ayarları */
+.paragraph-text {
+    box-sizing: border-box;
+    color: rgb(47, 79, 79);
+    display: block;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    height: 164px;
+    letter-spacing: normal;
+    line-height: 48px;
+    margin-block-end: 16px;
+    margin-block-start: 0px;
+    margin-bottom: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-wrap: wrap;
+    unicode-bidi: isolate;
+    white-space-collapse: preserve-breaks;
+    width: 555px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+
+
+
+
+
+   /* font-size: 1.5rem; /* Dinamik font boyutu */
+  /*  font-weight: 600; /* Normal yazı kalınlığı */
+  /*  color: rgb(47, 79, 79); /* Yazı rengi */
+  /*  line-height: 1.6; /* Satır yüksekliği */
+ /*   text-align: left; /* Sol hizalı */
+}
+@media (max-width: 600px) {
+    .paragraph-text {
+        font-size: 1.2rem; /* Daha küçük bir font boyutu */
+    }
+}
+
+.email-form-container {/*BUTON VE E-MAİL KISMI*/
+    flex-wrap:nowrap;
+
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    height: 68.75px;
+    justify-content: start;
+    line-height: 24px;
+    margin-top: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 555px;
+    -webkit-box-align: start;
+    -webkit-box-pack: start;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    justify-content: flex-start;
+
+
+  /*  display: flex; /* Elemanları yan yana hizalamak için flexbox */
+  /*  align-items: center; /* Dikey hizalama */
+ /*   width: 100%; /* Genişliği container kadar genişlet */
+
+ /*   justify-content: flex-start; /* Sol hizalama */
+
+}
+
+.input-text {
+    box-sizing: content-box;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    
+    font-weight: 400;
+    height: 28.75px;
+    letter-spacing: normal;
+    line-height: 26.2857px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    min-width: 0px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
+    padding-bottom: 12px;
+    padding-inline-end: 12px;
+    padding-inline-start: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    text-align: start;
+    width: 232px;
+     border-radius: 4px; /* Köşe yuvarlam*/
+     overflow: hidden;
+     text-overflow: ellipsis;
+     border: 1px solid #333;
+   /* text-align: start; /* Metni sola hizala */
+
+  /*  box-sizing: content-box; /* İçerik kutusu boyutlandırma */
+   /* color: rgb(66, 66, 66); /* Yazı rengi */
+   /* font-family: Lato; /* Yazı tipi */
+   /* font-size: 20px; /* Yazı boyutu */
+   /* font-weight: 400; /* Yazı kalınlığı */
+  /*  height: 28.75px; /* Yükseklik */
+  /*  padding: 12px; /* İçerik dolgusu */
+  /*  width: 232px; /* Genişlik */
+   /* text-align: start; /* Metni sola hizala */
+ /*   overflow: hidden; /* Taşmayı gizle */
+  /*  text-overflow: ellipsis; /* Taşan metni üç nokta ile göster */
+  /*  border-radius: 4px; /* Köşe yuvarlama */
+  
+ /*   border: 1px solid #333; /* Çerçeve kalınlığı, stili ve rengi */
+}
+.input-text:hover {
+    border-color: white; /* Çerçeve rengi beyaz */
+}
+/* Butona tıkladığında (focus) çerçeve rengini mavi yap */
+.input-text:focus {
+    border-color: black; /* Tıklama sonrası çerçeve rengi */
+    outline: none; /* Varsayılan odak kutusunu kaldır */
+}
+.request-demo-button {
+
+    align-items: center;
+    appearance: none;
+    background-color: rgb(0, 123, 255);
+    border-bottom-left-radius: 4px;/*çerçeve ayarları borderların hepsi*/
+    border-bottom-right-radius: 4px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    font-family: Lato;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 600;
+    height: 54px;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: 30px;
+    margin-bottom: 0px;
+    margin-left: 1px;
+    margin-right: 0px;
+    margin-top: 1px;
+    min-width: 64px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
+    padding-bottom: 12px;
+    padding-inline-end: 32px;
+    padding-inline-start: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    position: relative;
+    text-align: center;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    text-wrap: nowrap;
+    transition-behavior: normal, normal, normal, normal;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-duration: 0.25s, 0.25s, 0.25s, 0.25s;
+    transition-property: background-color, box-shadow, border-color, color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    vertical-align: middle;
+    white-space-collapse: collapse;
+    width: 209.775px;
+    word-spacing: 0px;
+   
+
+ 
+}
+
+
+/* Ekran genişliği 600 pikselden az olduğunda butonu alt satıra geçir */
+@media (max-width: 600px) {
+    .email-form-container {
+        flex-direction: column; /* Elemanları dikey hizala */
+        align-items: stretch; /* Elemanları tamamen genişlet */
+    }
+
+    .input-text {
+        margin-right: 0; /* Sağ margin'i kaldır */
+        margin-bottom: 8px; /* Buton ile alan arasında alt boşluk bırak */
+    }
+    .request-demo-button {
+        width: auto; /* Butonun genişliğini otomatik ayarla */
+        margin-top: 0; /* Varsayılan üst margin'i sıfırla */
+        margin-left: 16px; /* Soldan 16 piksel margin ekle */
+        margin-left: 16px; /* Soldan 16 piksel margin ekle */
+    }
+}
+/* Sağ Kısım (Resim) */
+.image-container {
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: flex;
+    flex-basis: 41.6667%;
+    flex-direction: row;
+    flex-grow: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 24px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    max-width: 41.6667%;
+    padding-top: 32px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+  /*  width: 462.5px;*/
+    -webkit-box-flex: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+}
+
+.image-container img {
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-left-color: rgb(0, 0, 0);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(0, 0, 0);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+   /* height: 462.5px;*/
+    line-height: 24px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: left;
+    text-size-adjust: 100%;
+   /* vertical-align: middle;*/
+    /*width: 462.5px;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+
+ /*   height: auto; /* Oranlarını koruyarak yüksekliği ayarla */
+  /*  border-radius: 10px; /* Kenarları yuvarla */
+  /*  font-size: 16px;
+  /*  font-weight: 400px;
+    text-size-adjust :100%;
+    line-height: 24px;
+    vertical-align : middle;*/
+}
+
+.section2 {
+
+    background-color: rgb(0, 0, 128);
+    height: auto; /* Yüksekliği orantılı tut */
+
+    padding-bottom: 96px;
+    padding-top: 96px;
+    text-align: start;
+    unicode-bidi: isolate;
+   /* width: 1604px;*/
+}
+
+.section2_heading {
+
+    box-sizing: border-box; /* Kutu boyutlandırması */
+    color:  rgb(177, 181, 211); /* Metin rengi */
+    font-family: Lato;
+    font-size: 13.5px;;
+    height: 54px; /* Yükseklik ayarı */
+    text-align: center; /* Metin ortalama */
+   /* line-height :30px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+    margin-bottom :8px;
+    margin-inline-end :0px;
+    margin-inline-start :0px;
+    margin-top: 0px;
+    padding-bottom :24px;*/
+    
+
+}
+.images {
+    width: 80%; /* İçerik genişliğini belirleyin (örneğin, %80) */
+    align-items: center;
+    box-sizing: border-box;
+    display: flex; /* Flexbox düzenini kullan */
+    flex-direction: row; /* Elemanları yan yana yerleştir */
+    flex-wrap: nowrap; /* Elemanların aynı satırda kalmasını sağla */
+    font-size: 16px;
+    height: auto; /* Yüksekliği otomatik ayarla */
+    justify-content: space-between; /* Elemanlar arasında eşit boşluk bırak */
+    line-height: 24px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+}
+
+
+.type1,.type2,.type3,.type4,.type5,.type6{
+    margin: -24px 0px 0px -24px  ; /* Ortalamak için margin auto kullan */
+
+}
+
+.type1 {
+    color: rgb(0, 86, 179);
+    cursor: pointer;
+   /* display: inline;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 56.4625px;
+    line-height: 24px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 160px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+}
+.image1{
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    /*display: block;*/
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-grow: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 80.4625px;
+    line-height: 24px;
+    margin-bottom: 0px;
+   
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-top: 24px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-flex: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.type2 {
+   
+    box-sizing: border-box;
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+   /* display: inline;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 47.675px;
+    line-height: 24px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 112px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.image2{
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+   /* display: block;*/
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-grow: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height:  71.675px;
+    line-height: 24px;
+    margin-bottom: 0px;
+
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-top: 24px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-flex: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.type3 {
+   
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+  /*  display: inline;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 38.4px;
+    line-height: 24px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 96px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.image3{
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+   /* display: block;*/
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-grow: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height:  62.4px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-top: 24px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-flex: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.type4 {
+   
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+  /*  display: inline;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 39.2375px;
+    line-height: 24px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 160px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.image4{
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+   /* display: block;*/
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-grow: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height:  63.2375px;
+    line-height: 24px;
+    margin-bottom: 0px;
+    
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-top: 24px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-flex: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.type5 {
+   
+    cursor: pointer;
+ /*   display: inline;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 39.8125px;
+    line-height: 24px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 112px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.image5{
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+ /*   display: block;*/
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-grow: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height:  63.8125px;
+    line-height: 24px;
+    margin-bottom: 0px;
+   
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-top: 24px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-flex: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.image6 {
+    box-sizing: border-box;
+  /*  display: block;*/
+    flex-basis: 100%;
+    flex-direction: row; /* Bu özellik yalnızca flex container üzerinde geçerlidir, burada etkili olmayacaktır */
+    flex-grow: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 78.075px;
+    line-height: 24px;
+    margin-bottom: 0px;
+
+    margin-top: 0px;
+    max-width: 100%;
+    padding-left: 24px;
+    padding-top: 24px;
+    text-align: center;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-box-flex: 0; /* Geçmiş tarayıcılar için */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    
+}
+.type6 {
+   
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    height: 54.075px;
+    line-height: 24px;
+    overflow-x: clip;
+    overflow-y: clip;
+    overflow-clip-margin: content-box;
+    text-align: center;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    width: 160px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+.section3_id_class{
+    
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    
+
+
+}
+.section3 {
+    
+background-color: #000080; /* Yeşil tonları */
+background-attachment: scroll;
+background-color: rgb(0, 0, 128);
+background-position-x: 50%;
+background-position-y: 50%;
+background-repeat: no-repeat;
+background-size: cover;
+border-bottom-color: rgb(0, 0, 0);
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-top-color: rgb(0, 0, 0);
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: border-box;
+color: rgb(33, 37, 41);
+display: block;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+padding-bottom: 96px;
+padding-top: 96px;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+}
+.container_full_section3{
+    
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+   /*margin-left:vw;
+   margin-right:vw;*/
+    max-width: 800px;
+    padding-left: -10px;
+    padding-right: -10px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+}
+.image_and_text_section3{
+  
+align-items: center;
+box-sizing: border-box;
+color: #212529;
+column-gap: 32px;
+display: flex;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+row-gap: 32px;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-box-align: center;
+-webkit-box-pack: justify;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+}
+.text_section3{
+
+ 
+
+color: rgb(33, 37, 41);
+display: block;
+flex-basis: 41.6667%;
+flex-direction: row;
+flex-grow: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin-bottom: 0px;
+margin-left: -0px;
+margin-right: 0px;
+margin-top: 0px;
+max-width: 100%;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-box-flex: 0;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+}
+.header_section3{
+
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 54px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+    margin-bottom: 8px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-top: 0px;
+    padding-bottom: 16px;
+    padding-top: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-wrap: wrap;
+    unicode-bidi: isolate;
+    white-space-collapse: preserve-breaks;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.text_section3_text{
+
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 48px;
+    margin-block-end: 16px;
+    margin-block-start: 0px;
+    margin-bottom: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-wrap: wrap;
+    unicode-bidi: isolate;
+    white-space-collapse: preserve-breaks;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.image_style3{
+    
+box-sizing: border-box;
+color: rgb(33, 37, 41);
+display: flex;
+flex-basis: 50%;
+flex-direction: row;
+flex-grow: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+justify-content: center;
+line-height: 24px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+max-width: 50%;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-box-flex: 0;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.image_style3_in {
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-left-color: rgb(0, 0, 0);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(0, 0, 0);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    text-align: left;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+.section4 {
+    background-color: #f4f4f4; /* Açık mavi tonları */
+    background-attachment: scroll;
+    background-color: rgb(240, 240, 240);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    text-align: left;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+}
+.image_and_text_section4{
+    align-items: center;
+box-sizing: border-box;
+color: rgb(33, 37, 41);
+display: flex;
+flex-wrap: wrap;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+margin-left: -15px;
+margin-right: -15px;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.container_full_section4{
+     box-sizing: border-box;
+color: rgb(33, 37, 41);
+display: block;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+max-width: 960px;
+padding-left: 15px;
+padding-right: 15px;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.header_section4{
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 54px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+    margin-bottom: 8px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-top: 0px;
+    padding-bottom: 16px;
+    padding-top: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-wrap: wrap;
+    unicode-bidi: isolate;
+    white-space-collapse: preserve-breaks;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+
+
+}
+.text_section4{
+box-sizing: border-box;
+color: rgb(33, 37, 41);
+display: block;
+flex-basis: 50%;
+flex-grow: 0;
+flex-shrink: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+max-width: 50%;
+padding-bottom: 0px;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.text_section4_text{
+/*flex-basis: 41.6667%;
+flex-direction: row;
+flex-grow: 0;*/
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 48px;
+    margin-block-end: 16px;
+    margin-block-start: 0px;
+    margin-bottom: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-wrap: wrap;
+    unicode-bidi: isolate;
+    white-space-collapse: preserve-breaks;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+
+}
+.image_style4{
+box-sizing: border-box;
+color: rgb(33, 37, 41);
+display: block;
+flex-basis: 50%;
+flex-grow: 0;
+flex-shrink: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+max-width: 50%;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+text-align: center;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.image_style4_in{
+    border-bottom-color: rgb(0, 0, 0);
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-left-color: rgb(0, 0, 0);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(0, 0, 0);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgb(0, 0, 0);
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: border-box;
+color: rgb(33, 37, 41);
+display: block;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+
+overflow-clip-margin: content-box;
+overflow-x: clip;
+overflow-y: clip;
+text-align: center;
+text-size-adjust: 100%;
+vertical-align: middle;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.section5 {
+    background-color: #000080; /* Pembe tonları */
+}
+
+.section6 {
+    background-color: #f4f4f4; /* Mor tonları */
+}
+
+.section7 {
+    background-color: #000080; /* Gri tonları */
+}
+
+.section8 {
+    background-color: #f4f4f4; /* Açık mavi tonları */
+}
+
+.section9 {
+    background-color: #000080; /* Açık pembe tonları */
+}
+
+
+
